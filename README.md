@@ -20,16 +20,21 @@ bitcore install insight-api
 bitcore install insight-ui
 ```
 ```
-sudo -s apt-get -yq install nodejs-legacy npm 
+sudo -s apt-get -yq install nodejs-legacy npm libzmq3-dev  
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash 
 export NVM_DIR="$HOME/.nvm" 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
 nvm install v4 
 npm install https://github.com/pungotoken/bitcore-node-komodo.git
 npm install http-signature
-
+nvm use v4; node_modules/bitcore-node-komodo/bin/bitcore-node create mainnet
+cd mainnet && npm install --save fs-extra && npm install --save http-signature har-validator 
+../node_modules/bitcore-node-komodo/bin/bitcore-node install https://github.com/pungotoken/insight-api-komodo.git https://github.com/pungotoken/insight-ui-komodo.git
+bitcore-node start
 ```
 
+
+bitcore-node start
 
 Create config:
 
