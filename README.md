@@ -1,5 +1,16 @@
 ![Pungo Token](https://pungotoken.sale/images/token_logo.png)
 
+## Development Resources
+
+- PungoToken Website: [https://pungotoken.com](https://pungotoken.com/)
+- PungoToken Blockexplorer: [https://explorer.pungotoken.build](https://explorer.pungotoken.com)
+- PungoToken Telegram: [https://t.me/pungotalk](https://t.me/pungotalk)
+- PungoToken Node Addresses:  190.114.254.103, 190.114.254.104
+- PungoToken Electrum Servers Addresses: agama.komdo.build:10001 agama2.komodo.build:10001
+
+## Dependency
+You must run PGT coin see [https://github.com/pungotoken/komodo](https://github.com/pungotoken/komodo)
+
 # Insight UI
 
 A Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/pungotoken/bitcore-node-komodo.git) using the [Insight API](https://github.com/pungotoken/insight-api-komodo.git).
