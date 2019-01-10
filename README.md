@@ -12,24 +12,14 @@ A Bitcoin blockchain explorer web application service for [Bitcore Node](https:/
 - PungoToken Node Addresses:  190.114.254.103, 190.114.254.104
 - PungoToken Electrum Servers Addresses: electrum1.pungo.cloud:10002 electrum2.pungo.cloud:10002
 
-## Dependency
-You must run PGT coin see [https://github.com/pungotoken/komodo](https://github.com/pungotoken/komodo)
-
-## Quick Start
-
-Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Bitcore](https://github.com/bitpay/bitcore).
-
 ## Getting Started
+
+### Dependencies
+
+You must run PGT coin see [https://github.com/pungotoken/komodo](https://github.com/pungotoken/komodo)
 
 To manually install all of the necessary components, you can run these commands:
 
-```bash
-npm install -g bitcore
-bitcore create mynode
-cd mynode
-bitcore install insight-api
-bitcore install insight-ui
-```
 ```bash
 sudo -s apt-get -yq install nodejs-legacy npm libzmq3-dev  
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash 
@@ -42,6 +32,18 @@ nvm use v4; node_modules/bitcore-node-komodo/bin/bitcore-node create mainnet
 cd mainnet && npm install --save fs-extra && npm install --save http-signature har-validator 
 ../node_modules/bitcore-node-komodo/bin/bitcore-node install https://github.com/pungotoken/insight-api-komodo.git https://github.com/pungotoken/insight-ui-komodo.git
 ```
+
+```bash
+npm install -g bitcore
+bitcore create mynode
+cd mynode
+bitcore install insight-api
+bitcore install insight-ui
+```
+
+### Quick Start
+
+Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Bitcore](https://github.com/bitpay/bitcore).
 
 Create config:
 
